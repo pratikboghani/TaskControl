@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D013386-BA5A-42DD-995B-21FBE7B55DCC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UTC</RootNamespace>
+    <AssemblyName>UTC</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Documents.Core.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Core.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.IO.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.IO.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Reports.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.CSharp.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.CSharp.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.TSql.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.TSql.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.VisualBasic.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.VisualBasic.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Word.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Word.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Math.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Math.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Undo.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Undo.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.AppStylistSupport.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.SupportDialogs.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.SupportDialogs.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraChart.v13.2.Design, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraChart.v13.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraGauge.v13.2.Design, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraGauge.v13.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v13.2.FormulaBuilder, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v13.2.FormulaBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinChart.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinChart.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinDataSource.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinDock.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinExplorerBar.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinFormattedText.WordWriter.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinFormattedText.WordWriter.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGanttView.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGanttView.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGauge.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGauge.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.DocumentExport.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.ExcelExport.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.WordWriter.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.WordWriter.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinInkProvider.Ink17.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinInkProvider.Ink17.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListBar.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinListBar.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinListView.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinLiveTileView.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinLiveTileView.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinMaskedEdit.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPrintPreviewDialog.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinPrintPreviewDialog.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinRadialMenu.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinRadialMenu.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinSchedule.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinSpellChecker.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinStatusBar.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabbedMdi.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabControl.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinToolbars.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTree.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.2, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Accessibility" />
+    <Reference Include="Infragistics4.Win.v13.2.Design, Version=13.2.20132.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v13.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlSetting.cs" />
+    <Compile Include="FrmSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSort.Designer.cs">
+      <DependentUpon>FrmSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGridHelper\BrowsableTypeConverter.cs" />
+    <Compile Include="PropertyGridHelper\CustomChoices.cs" />
+    <Compile Include="PropertyGridHelper\CustomColorScheme.cs" />
+    <Compile Include="PropertyGridHelper\CustomProperty.cs" />
+    <Compile Include="PropertyGridHelper\CustomPropertyCollection.cs" />
+    <Compile Include="PropertyGridHelper\CustomPropertyCollectionSet.cs" />
+    <Compile Include="PropertyGridHelper\UICheckedListboxEditor.cs" />
+    <Compile Include="PropertyGridHelper\UICustomEventEditor.cs" />
+    <Compile Include="PropertyGridHelper\UIDialogEditor.cs" />
+    <Compile Include="PropertyGridHelper\UIFilenameEditor.cs" />
+    <Compile Include="PropertyGridHelper\UIListboxEditor.cs" />
+    <Compile Include="UTCProgressbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCPropertyGrid.designer.cs">
+      <DependentUpon>UTCPropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdvanceSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdvanceSearch.designer.cs">
+      <DependentUpon>FrmAdvanceSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCCheckBox.Designer.cs">
+      <DependentUpon>UTCCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCOptionSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCOptionSet.Designer.cs">
+      <DependentUpon>UTCOptionSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCButton.Designer.cs">
+      <DependentUpon>UTCButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCLabel.Designer.cs">
+      <DependentUpon>UTCLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCRateControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCRateControl.Designer.cs">
+      <DependentUpon>UTCRateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCStatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UTCStatusBar.Designer.cs">
+      <DependentUpon>UTCStatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCTextBox.Designer.cs">
+      <DependentUpon>UTCTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTCCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCCombo.Designer.cs">
+      <DependentUpon>UTCCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputBox.Designer.cs">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelect.Designer.cs">
+      <DependentUpon>FrmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCInputChar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInputChar.Designer.cs">
+      <DependentUpon>UCInputChar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCInputCharNumeric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInputCharNumeric.Designer.cs">
+      <DependentUpon>UCInputCharNumeric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCInputNumeric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInputNumeric.Designer.cs">
+      <DependentUpon>UCInputNumeric.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAdvanceSearch.resx">
+      <DependentUpon>FrmAdvanceSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSort.resx">
+      <DependentUpon>FrmSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UTCOptionSet.resx">
+      <DependentUpon>UTCOptionSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UTCStatusBar.resx">
+      <DependentUpon>UTCStatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UTCCombo.resx">
+      <DependentUpon>UTCCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UTCGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UTCGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelect.resx">
+      <DependentUpon>FrmSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCInputChar.resx">
+      <DependentUpon>UCInputChar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInputCharNumeric.resx">
+      <DependentUpon>UCInputCharNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInputNumeric.resx">
+      <DependentUpon>UCInputNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UTCGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UTCGrid.Designer.cs">
+      <DependentUpon>UTCGrid.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

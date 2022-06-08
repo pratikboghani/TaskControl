@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1500
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskControl", "TaskControl\TaskControl.csproj", "{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLib", "DataLib\DataLib.csproj", "{697ED4A0-570B-4537-9297-25A30C55DCF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTC", "UTC\UTC.csproj", "{7D013386-BA5A-42DD-995B-21FBE7B55DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusLib", "BusLib\BusLib.csproj", "{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Debug|x86.Build.0 = Debug|Any CPU
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Release|x86.ActiveCfg = Release|Any CPU
+		{7EF4DC42-C92A-4D4B-970A-2E49D5AFD92B}.Release|x86.Build.0 = Release|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Debug|x86.Build.0 = Debug|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Release|x86.ActiveCfg = Release|Any CPU
+		{697ED4A0-570B-4537-9297-25A30C55DCF8}.Release|x86.Build.0 = Release|Any CPU
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Debug|x86.ActiveCfg = Debug|x86
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Debug|x86.Build.0 = Debug|x86
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Release|x86.ActiveCfg = Release|x86
+		{7D013386-BA5A-42DD-995B-21FBE7B55DCC}.Release|x86.Build.0 = Release|x86
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Debug|x86.Build.0 = Debug|Any CPU
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Release|x86.ActiveCfg = Release|Any CPU
+		{BACB6A9E-C8DE-4BBE-B737-ADC222FC67CE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84700AB5-8B62-44E7-B94B-9591E5FF0028}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://devsrv:8080/tfs/collection2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BusLib\\BusLib.csproj
+		SccProjectName1 = BusLib
+		SccLocalPath1 = BusLib
+		SccProjectUniqueName2 = DataLib\\DataLib.csproj
+		SccProjectName2 = DataLib
+		SccLocalPath2 = DataLib
+		SccProjectUniqueName3 = TaskControl\\TaskControl.csproj
+		SccProjectName3 = TaskControl
+		SccLocalPath3 = TaskControl
+		SccProjectUniqueName4 = UTC\\UTC.csproj
+		SccProjectName4 = UTC
+		SccLocalPath4 = UTC
+	EndGlobalSection
+EndGlobal
